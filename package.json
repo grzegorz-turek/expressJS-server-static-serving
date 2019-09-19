@@ -1,0 +1,24 @@
+{
+  "name": "webpack-exercise",
+  "version": "1.0.0",
+  "description": "webpack env config",
+  "main": "index.js",
+  "scripts": {
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "start": "webpack-dev-server --hot --env development",
+    "build": "webpack --env production"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Grzegorz Turek",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

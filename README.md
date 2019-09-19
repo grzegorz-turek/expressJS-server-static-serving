@@ -1,0 +1,1 @@
+ExpressJS exercise: static serving
